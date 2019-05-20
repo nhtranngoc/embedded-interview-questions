@@ -32,7 +32,11 @@
 
 16) __What hardware debugging protocols are used to communicate with ARM microcontrollers?__
 
+JTAG and SWD. 
+
 17) __What processor architecture was the original Arduino based on?__
+
+The ATmega168 on the Arduino Duemilanove (?)
 
 18) __What are the basic concepts of what happens before main() is called in C?__
 
@@ -41,6 +45,12 @@
 20) __Describe each of the following? SRAM, Pseudo-SRAM, DRAM, ROM, PROM, EPROM, EEPROM, MRAM, FRAM, ...__
 
 21) __Show how to declare a pointer to constant data in C. Show how to declare a function pointer in C.__
+
+`c
+uint8_t foo = 20;
+uint8_t * bar;
+bar = &foo;
+`
 
 22) __How do you multiply without using multiply or divide instructions for a multiplier constant of 15, 30, 60, 260?__
 
@@ -58,11 +68,15 @@
 
 29) __What is ohm's law?__
 
+`V = I * R`
+
 30) __What is Nyquist frequency (rate)? When is this important?__
 
 31) __What is "wait state"?__
 
 32) __What are some common logic voltages?__
+
+3.3v is most commonly used nowadays, followed by 5v and 1.8v.
 
 33) __What are some common logic famlies?__
 
@@ -72,11 +86,22 @@
 
 36) __What is AC? What is DC? Describe the voltage in the wall outlet? Describe the voltage in USB 1.x and 2.x cables?__
 
+- Alternative Current and Direct Current. Alternative Current alternates between VCC and GND at a fixed frequency, usually 60Hz. Direct current does not. 
+
+- In a wall outlet, the AC voltage is 220v (in European and Asian countries), and 110V (in US and Canada).
+
+- In USB 1.x and 2.x cables, DC voltage is 5v. 
+
 37) __What is RS232? RS432? RS485? MIDI? What do these have in common?__
+
+- 
+- They are all serial communication protocols. 
 
 38) __What is ESD? Describe the purpose of "pink" ESD bags? black or silvery ESD bag? How do you properly use a ground strap? When should you use a ground strap? How critical is it to use ESD protections? How do you safely move ESD-sensitive boards between different parts of a building?__
 
 39) __What is "Lockout-Tagout"?__
+
+Safety protocol used to prevent tampering with machinery when not in use. The machinery in question has to be locked and tagged (with the name of the person who holds the key) when not in use. 
 
 40) __What is ISO9001? What is a simple summary of it's concepts?__
 
@@ -84,7 +109,17 @@
 
 42) __What host O/S have you used? List experience from most to least used.__
 
+- Linux (Fedora, Ubuntu, Debian, Arch)
+
+- Windows 
+
+- MacOS
+
 43) __What embedded RTOS have you used? Have you ever written your own from scratch?__
+
+- FreeRTOS, ChibiOS
+
+- Not yet
 
 44) __Have you ever implemented from scratch any functions from the C Standard Library (that ships with most compilers)? Created your own because functions in C library didn't support something you needed?__
 
@@ -93,6 +128,8 @@
 45) __What is a CRC algorithm? Why would you use it? What are some CRC algorithms? What issues do you need to worry about when using CRC algorithms that might cause problems? Have you ever written a CRC algorithm from scratch?__
 
 46) __Do you know how to solder? Have you ever soldered surface mount devices?__
+
+Yes. Yes, but badly.
 
 47) __How do you permanently archive source code? project? what should be archived? what should be documented? have you ever written any procedures of how to archive or build a project? How about describing how to install software tools and configuring them from scratch on a brand new computer that was pulled out of a box?__
 
@@ -119,24 +156,55 @@
 58) __Conceptually, what do you need to do after reconfiguring a digital PLL? What if the digital PLL sources the clock for your microcontroller (and other concerns)?__
 
 59) __What topics or categories of jokes shouldn't you discuss, tell, forward at work?__
+- Jokes considered inappropriate or of discriminative nature.
 
 60) __Have you ever used any power tools for woodworking or metalworking?__
 
+Table saw, miter saw, drill, orbital sander, belt sander, planar, MIG welder. 
+
 61) __What is a common expression said when cutting anything to a specific length? (old expression for woodworking)__
+
+Measure twice cut once.
 
 62) __Have you ever 3D printed anything? Have you ever created a 3D model for anything? List one or more 3D file extensions.__
 
+- Yes
+
+- Yes
+
+- `.stl`, `.obj`
+
 63) __Do you know how to wire an AC wall outlet or ceiling light? Have you ever done either?__
+
+- Yes
+
+- Yes 
 
 64) __Have you ever installed a new hard drive / RAM / CPU in a desktop computer?__
 
+- Yes
+
+- Yes
+
 65) __Have you ever installed Windows or Linux from scratch on a computer that has a brand-new hard drive?__
+
+- Yes
+
+- Yes
 
 66) __Have you ever "burned" a CD-R or DVD-R disc? Have you ever created an ISO image of a CD or DVD or USB drive or hard drive?__
 
+- Yes
+
+- Yes
+
 67) __Have you ever read the contents of a serial-EEPROM chip from a dead system (though EEPROM chip is ok)?__
 
+- Yes, but it wasn't dead
+
 68) __Have you ever written data to a serial-EEPROM chip before it is soldered down to a PCB?__
+
+- Yes
 
 69) __How do you erase an "old school" EPROM chip? (has a glass window on top of the chip)__
 
@@ -152,6 +220,8 @@
 
 75) __What in-circuit debuggers or programmers have you used? Which one do you like or hate?__
 
+ST-Link
+
 76) __Do you know any assembler code? For which processor? What assembler code is your favorite or hate? Have you ever written an assembler from scratch?__
 
 77) __What is "duff's device"? Have you ever used it?__
@@ -160,6 +230,11 @@
 
 79) __Have you ever soldered any electronic kits? Have you ever designed your own PCB(s)? Describe. What is a Gerber file?__
 
+- Yes
+
+- Yes, a couple of times.
+
+- A file used to describe how a circuit board can be printed. This is what most PCB Manufacturers require when you order a PCB.
 80) __If you create a circular buffer, what size of buffer might optimized code be slightly faster to execute? why?__
 
 81) __Describe how to multiply two 256-bit numbers using any 32-bit processor without FPU or special instructions. Two or more methods?__
