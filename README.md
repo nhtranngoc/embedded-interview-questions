@@ -46,11 +46,11 @@ The ATmega168 on the Arduino Duemilanove (?)
 
 21) __Show how to declare a pointer to constant data in C. Show how to declare a function pointer in C.__
 
-`c
+```c
 uint8_t foo = 20;
 uint8_t * bar;
 bar = &foo;
-`
+```
 
 22) __How do you multiply without using multiply or divide instructions for a multiplier constant of 15, 30, 60, 260?__
 
