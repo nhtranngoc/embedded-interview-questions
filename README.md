@@ -64,7 +64,7 @@
 
 32) __What are some common logic voltages?__
 
-33) __What are some common logic famlies?
+33) __What are some common logic famlies?__
 
 34) __What is a CPLD? an FPGA? Describe why they might be used in an embedded system?__
 
