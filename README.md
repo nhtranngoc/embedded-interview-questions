@@ -122,6 +122,7 @@ Safety protocol used to prevent tampering with machinery when not in use. The ma
 - Not yet
 
 44) __Have you ever implemented from scratch any functions from the C Standard Library (that ships with most compilers)? Created your own because functions in C library didn't support something you needed?__
+Most <string.h> functions, `atoi`, `itoa`, and other misc. functions in K&R's book.
 
 45) __Have you ever used any encryption algorithms? Did you write your own from scratch or use a library (which one)? Describe which type of algorithms you used and in what situations you used them?__
 
@@ -207,6 +208,8 @@ Measure twice cut once.
 - Yes
 
 69) __How do you erase an "old school" EPROM chip? (has a glass window on top of the chip)__
+
+- Erasing an EPROM is done by shining ultraviolet ray on the window - an alternative is to leave it out under direct sunlight for a bit.
 
 70) __Describe any infrared protocols, either for data or remote controlling a TV.__
 
