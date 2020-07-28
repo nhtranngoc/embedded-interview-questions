@@ -2,11 +2,32 @@
 
 1) __Which endianness is: A) x86 families. B) ARM families. C) internet protocols. D) other processors? One of these is kind of a trick question.__
 
+A) x86 CPUs, especially Intel, are little endian.
+
+B) Most ARM processors are little endian, or bi-endian.
+
+C) Networking protocols mainly are big endians.
+
+
 2) __Explain how interrupts work. What are some things that you should never do in an interrupt function?__
 
+Interrupts are signals, or events that temporary suspend the main software code, and rather execute an external task. Interrupts are usually hardware-driven, though there are software interrupts, implemented in the instruction set.
+
+Interrupts' big no nos:
+- Blocking function calls
+- Non-reeentrant function calls
+- Long function calls
+- Dynamic memory allocation (even more so in embedded)
+
+
 3) __Explain when you should use "volatile" in C.__
+`volatile` indicates the variable may be subject to change at any time. By using `volatile`, you tell the compiler to not optimize it. 
+
+Therefore it is best to use `volatile` for memory-mapped, or hardware interfacing variables, or variable set in one thread of an OS to signal another.
 
 4) __Explain UART, SPI, I2C buses. Describe some of the signals in each. At a high-level describe each. Have you ever used any? Where? How? What type of test equipment would you want to use to debug these types of buses? Have you ever used test equipment to do it? Which?__
+
+
 
 5) __Explain how DMA works. What are some of the issues that you need to worry about when using DMA?__
 
